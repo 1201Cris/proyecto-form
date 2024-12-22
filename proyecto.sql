@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-12-2024 a las 20:01:32
+-- Tiempo de generación: 22-12-2024 a las 13:06:45
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 7.4.33
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `catalogo`
+-- Base de datos: `proyecto`
 --
 
 -- --------------------------------------------------------
@@ -106,8 +106,8 @@ CREATE TABLE `usuarios` (
   `usuario` text NOT NULL,
   `password` text NOT NULL,
   `creado` datetime NOT NULL DEFAULT current_timestamp(),
-  `estado` tinyint(4) NOT NULL DEFAULT -1,
-  `rol_id` tinyint(4) NOT NULL DEFAULT 2,
+  `estado` tinyint(4) NOT NULL DEFAULT 1,
+  `rol_id` tinyint(4) NOT NULL DEFAULT 3,
   `ult_login` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -116,8 +116,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`usuario_id`, `email`, `apellido`, `nombre`, `usuario`, `password`, `creado`, `estado`, `rol_id`, `ult_login`) VALUES
-(1, 'admin@hilet.com', 'admin', 'catalogo', 'admin', '1234', '2024-10-24 18:39:32', 1, 1, '2024-12-05 15:55:38'),
-(2, 'cliente@hilet.com', 'Cliente', 'compra', 'cliente', '1234', '2024-10-29 20:55:05', 1, 3, '2024-11-12 20:50:39');
+(1, 'abrahamcris@hotmail.com.ar', 'Blanco', 'Cristian', 'Cris07', '0112', '2024-10-24 18:39:32', 1, 1, '2024-12-05 15:55:38');
 
 --
 -- Índices para tablas volcadas
